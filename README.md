@@ -193,7 +193,7 @@ This project uses the **Lending Club dataset (2007–2020)** for experiments on 
 
 ### Data Description
 
-<img src="https://github.com/user-attachments/assets/633da717-78dc-4ace-bf41-00cae8fd82f4" width="851" height="812" alt="Image"/>
+<img src="https://github.com/user-attachments/assets/2956605f-592d-497c-aac8-56a6c587784f"  width="851" height="812" alt="Image"/>
 The selected predictive features consist of 10 continuous variables and 5 categorical variables, chosen to capture key aspects of borrower creditworthiness, repayment capacity, and loan characteristics while avoiding post-origination outcome information.  
 The continuous variables include financial and credit-related indicators such as FICO score, income, debt-to-income ratio, interest rate, installment amount, revolving credit usage, revolving balance, bankcard utilization, and credit history length.  
 The categorical variables describe loan and borrower profile information available at origination, including loan subgrade, home ownership status, loan purpose, employment length, and loan term.  
@@ -202,7 +202,7 @@ The repayment label (`loan_status`) is encoded separately as the target label fo
 ---
 
 ## Model Architecture
-<img width="893" height="555" alt="Image" src="https://github.com/user-attachments/assets/5f70c447-82ae-4755-9d50-469400ed2ce9" />
+<img width="893" height="555" alt="Image" src="https://github.com/user-attachments/assets/a5e771ea-44ec-4cd9-a6cd-f621aa98f400" />
 
 The proposed VAE-CTABGAN framework consists of three main parts: **feature encoding**, **Stage 1 VAE warm-up learning**, and **Stage 2 adversarial VAE-CTABGAN learning**.  
 First, raw tabular data are transformed into an encoded representation. Continuous and mixed variables are processed through mixture-based normalization, where each value is represented by a normalized scalar and its corresponding mode indicator, while categorical variables are converted into conditional vectors through log-frequency sampling.  
